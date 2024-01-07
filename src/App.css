@@ -1,0 +1,69 @@
+/* Updated Button Style */
+button {
+  margin-left: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049; /* Darker Green */
+  transform: scale(1.05);
+}
+
+/* Improved Video and Canvas Positioning */
+.video-canva {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  width: 600px;
+  margin: 0 auto;
+}
+
+canvas,
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Updated Controls Styling */
+.controls {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Additional Feedback Messages */
+.feedback-message {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #2ecc71; /* Adjust color as needed */
+}
+
+/* For smaller screens - mobile devices */
+@media (max-width: 768px) {
+  .video-canva {
+    width: 100%;
+    height: auto;
+  }
+  video {
+    width: 100%;
+    height: auto;
+  }
+  canvas {
+    width: 100%;
+    height: auto;
+  }
+}
